@@ -1,0 +1,45 @@
+{
+  "name": "skip-tools",
+  "version": "1.0.0",
+  "description": "A TypeScript library for intelligent tool filtering in LLM applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": ["llm", "tools", "filtering", "ai", "typescript", "openai", "anthropic"],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/skip-tools.git"
+  },
+  "homepage": "https://github.com/yourusername/skip-tools#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/skip-tools/issues"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@types/js-yaml": "^4.0.9",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "openai": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

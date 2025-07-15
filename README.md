@@ -1,8 +1,8 @@
 # skip-tools
 
-A TypeScript library for simple tool filtering in LLM applications.
+Skip is a Middleware for LLM tool filtering.
 
-Reduce the number of tools passed to language models by using simple keyword-based filtering from conversation messages.
+It can be used to reduce the number of tools passed to language models by using simple keyword-based filtering from conversation messages.
 
 ## Features
 
@@ -87,7 +87,7 @@ console.log(incrementalResult.reason); // Shows "filtered by keywords from 2 new
 
 ## YAML Configuration
 
-Add a `skip:` section to your tool descriptions with these fields:
+Add a `skip:` section to your tool descriptions with the following fields:
 
 ### `depends_on` (optional)
 List of other tools that this tool depends on. These tools will be automatically included when this tool is selected:
@@ -106,6 +106,8 @@ Keywords that help match tools to user queries:
 skip:
   keywords: ["read", "file", "contents", "view", "open"]
 ```
+
+> **Note**: This YAML configuration will be automatically parsed out before passing the tool to the LLM.
 
 ## API Reference
 

@@ -1,6 +1,6 @@
 {
   "name": "skip-tools",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A TypeScript library for intelligent tool filtering in LLM applications",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,15 +12,15 @@
     "prepublishOnly": "npm run build && npm test"
   },
   "keywords": ["llm", "tools", "filtering", "ai", "typescript", "openai", "anthropic"],
-  "author": "Your Name <your.email@example.com>",
+  "author": "Annanay Agarwal <annanayagarwal@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/skip-tools.git"
+    "url": "git+https://github.com/annanay25/skip-tools.git"
   },
-  "homepage": "https://github.com/yourusername/skip-tools#readme",
+  "homepage": "https://github.com/annanay25/skip-tools#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/skip-tools/issues"
+    "url": "https://github.com/annanay25/skip-tools/issues"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
